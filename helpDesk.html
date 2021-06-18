@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index Page</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,500;1,200;1,400&display=swap');
+        body{
+            background-color: #efeff4;
+            font-family: 'Lato', sans-serif;
+        }
+        .head{
+            width: 100%;
+            height: 60px;
+            background-color: #1A0000;
+
+        }
+        .container{
+            width: 60%;
+            margin: auto;
+
+        }
+        .head_container{
+            padding: 10px;
+            width: 60%;
+            margin:auto;
+            display: flex;
+            flex-direction: row;
+            color: white;
+            font-family: sans-serif ;
+            font-size: 20px;
+            
+            
+        }
+        .top_Banner{
+            height: 255px;
+            font-family: sans-serif;
+
+        }
+        .top_Banner_main{
+            width: 50%;
+            margin:0px auto;
+            
+            
+        }
+        .head_container img{
+            height: 40px;
+            margin-right: 50px;
+        }
+        .left_content{
+            padding-top: 90px;
+            width: 50%;
+            color:white;
+            float: left;
+            /* margin-right: 5%; */
+            
+            
+        }
+        .left_content h1{
+            font-size: 30px;
+            
+        }
+        /* .left_content input{
+            width: 50%;
+            height: 40px;
+            border-radius: 10px;
+            margin-right: 10%;
+            padding-left:10px ;
+            
+
+        } */
+        .left_content button{
+            background-color: #00b137;
+            width: 30%;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            font-weight:bolder;
+            cursor: pointer;
+            float: right;
+            margin-right: -50%;
+
+        }
+        .right_content{
+            float: left;
+            width: 40%;
+        }
+        .right_content img{
+            
+            width: 100%;
+            
+        }
+        .left_topic{
+            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            
+            width: 70%;
+        }
+        .left_topic >div{
+            width:45%;
+            background-color: white;
+            border-radius: 10px;
+            margin: 1.5%;
+            padding: 1%;
+            height: 100px;
+            
+        }
+        .left_topic >div:hover{
+           
+            height: 103px;
+            background-color: rgb(248, 231, 209);
+            
+        }
+        .left_topic img{
+            width: 50px;
+            height: 45px;
+        }
+        .left_topic >div>span{
+            margin-top: 5%;
+            float: left;
+            margin-left: 5px;
+
+        }
+        .left_topic >div>div{
+            float: left;
+            
+
+        }
+        .left_topic >div>div p{
+            color: grey;
+            font-size: 13px;
+        }
+        .left_topic >div>div h2{
+            color: black;
+            
+        }
+        
+        .rigth_question{
+            width: 25%;
+            float: left;
+            margin-left: 1%;
+            background-color: white;
+            padding:1%;
+        }
+        ul{
+            list-style: none;
+            color: grey;
+            padding-left: 10px;
+        }
+        ul li{
+            font-size: 20px;
+            padding-bottom: 12px;
+        }
+        ul li:hover{
+            color: blue;
+            cursor: pointer;
+            font-size: 21px;
+        }
+        
+        .title{
+            font-size: 20px;
+        }
+        .helpDesk{
+            flex-grow: 3;
+            margin-top: 15px;
+            margin-left: 10px;
+            cursor: pointer;
+
+        }
+        .SingIn{
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .line{
+            background-color: white;
+            width: 1px;
+            margin-left:10px ;
+        }
+        a{
+            color: grey;
+            text-decoration: none;
+        }
+        /* here comes the tags and style of input box */
+        .searchInput{
+        background:white ;
+           width: 60%;
+           height: auto;
+           border-radius: 5px;
+           padding: 5px;
+
+        }
+        .searchInput input{
+            /* width:150px; */
+            height: 30px;
+            padding-left: 5px ;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            /* float: left; */
+           
+
+        }
+        .searchInput .autoCompleteBox{
+            padding: 5px 10px;
+            max-height: 150px;
+            overflow-y: auto;
+            box-shadow: 0px 0px 0px 0.01px;
+            opacity: 0;
+            pointer-events: none;
+            
+        }
+        .searchInput.activate .autoCompleteBox{
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .autoCompleteBox li{
+            list-style: none;
+            padding: 5px 10px;
+            cursor: default;
+            display:none;
+
+        }
+        .autoCompleteBox li:hover{
+            background-color: #efefef;
+        }
+        .searchInput.activate .autoCompleteBox li{
+            display: block;
+            color: black;
+        }
+        span .icons{
+            width: 24px;
+            height: 24px;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header class="head">
+        <div class="head_container">
+            <div class=" img_container"><a href="homePage.html">
+                    <img src="//theme.zdassets.com/theme_assets/2478323/abf20ed732088ee43d0df24a68361ae67080d252.png" alt="dream11 Image"></div>
+                </a>
+            <div class="line"></div>
+            <div class="helpDesk">Help Center</div>
+            <div class="SingIn" onclick="signedIn()">Sign in</div>
+        </div>
+    </header> 
+    <main >
+        <section class="head top_Banner">
+            <div class="top_Banner_main">
+                <div class="left_content">
+                    <div>
+                    
+                    <h1>What can We help You with?</h1>
+                    </div>
+                    <!-- <button>SEARCH</button> -->
+
+                    <div class="searchInput">
+
+                        <input type="text" placeholder="Type Your query here"><span><img class="icons" src="data:image/png;base64,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"alt="icon" ></span>
+                        <div class="autoCompleteBox"></div>
+                    </div>
+                   
+                    
+                </div>
+
+                <div class="right_content">
+                    <div> <img src="https://d13ir53smqqeyp.cloudfront.net/d11-static-pages/images/helpdesk_banner.png" alt=""></div>
+                   
+                </div>
+
+            </div>
+        </section>
+        <section class="container">
+            
+            
+            <h2>Topics</h2>
+            <div class="left_topic">
+                    
+                        <div>
+                    
+                            <span><img src="data:image/png;base64,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" alt=""></span>
+                            <div >
+                                <a href="WhatsNewPage.html">
+                                <h2>What's New</h2>
+                                <p>New Features, App Udates and more</p>
+                                </a>
+                            </div>
+                        </div>
+                    
+                    
+                
+                <div>
+                    
+                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPsGQCKpzvOsNS01PmrbyhWyL079ZPJq6I0Q&usqp=CAU" alt=""></span>
+                    <div >
+                        <a href="#">
+                        
+                            <h2>Getting started</h2>
+                            <p>what is Dream11, getting the App and more</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    
+                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpsIF0sgFAUeF2ggAW7JI8K1-zqyIKhhuAk1exD2xIEMh1IEg3IwS4YBcCynXMgGChi0&usqp=CAU" alt=""></span>
+                    <div >
+                        <a href="#">
+                        
+                            
+                            <h2>How to Play</h2>
+                            <p>Create team Join Contest & more</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    
+                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXBF4B4_RmZfkMlV-G2B4N28PJeDJuDd2e4aSGbIhyWL2kudE-60RRGz6HfL-A2aDBNoA&usqp=CAU" alt=""></span>
+                    <div >
+                        <a href="#">
+                            <h2>My Balance</h2>
+                            <p>Winning, Withdrawals, deposits & more</p>
+                        </a>
+
+                        
+                    </div>
+                </div>
+                <div>
+                    
+                    <span><img src="https://static.thenounproject.com/png/1367727-200.png" alt=""></span>
+                    <div >
+                        <a href="#">
+
+                            <h2>My Profile</h2>
+                            <p>View/Modify details, Verification & more</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    
+                    <span><img src="data:image/png;base64,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" alt=""></span>
+                    <div >
+                        <a href="#">
+
+                            <h2>My Offers & Coutpens</h2>
+                            <p>Invite Friends, D11 Champions & more</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    
+                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm5UsifmPazP7U9OmDLI6R5kKVNJZYvyvQ0g&usqp=CAU" alt=""></span>
+                    <div >
+                        <a href="#">
+
+                            <h2>Fantasy Point System</h2>
+                            <p>Understanding the Point System</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    
+                    <span><img src="https://previews.123rf.com/images/kchung/kchung1608/kchung160801009/61747487-group-and-social-icon-of-brown-and-thin-outline.jpg" alt=""></span>
+                    <div >
+                        <a href="#">
+
+                            <h2>Social</h2>
+                            <p>Dream 11 Feed, Manage your groups &more</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    
+                    <span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2chZPJ9fmF-8IHLrGG27ew2rleyWaczxFwJTEjE3ZiYFOZmFwjXbLlVRCr-ZeKnVH-Z4&usqp=CAU" alt=""></span>
+                    <div >
+                        <a href="#">
+
+                            <h2>Fair Play</h2>
+                            <p>Transparency, Trust & more</p>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="rigth_question">
+                <p class="title">Promoted Articles</p>
+                <ul class="allItemsInAList">
+                    <a href="verifyMobileNumver.html">
+
+                        <li>
+    
+                            I see a 'Verify Mobile Number' message every time I try to log in. What should I do now?
+                        </li>
+                    </a>
+                    <a href="flexible.html">
+
+                        <li>
+                            
+                       What are flexible contests?
+                      
+                        </li>
+                    </a>
+                    
+                    <li>
+                        
+                    How do I withdraw my winnings?
+                  
+                    </li>
+                    
+                    <li>
+                        
+                    How do I change my email ID?
+                  
+                    </li>
+                    
+                    <li>
+                        
+                    How do I change my mobile number?
+                  
+                    </li>
+                    
+                    <li>
+                         
+                    How do I change my bank account?
+                  
+                  
+                    </li>
+                    
+                    <li>
+                        
+                    How can I keep my Dream11 account safe?
+                  
+                    </li>
+                    
+                    <li>
+                        
+                    The New Invite Friends Program
+                  
+                    </li>
+                    <li>
+                        cricket: How my Fantasy cricket team points score?
+                    </li>
+                    <li>
+                        cricket: How to create a team for cricket?
+                    </li>
+                    
+                </ul>
+                
+                
+            </div>
+           
+
+        </section>
+
+    </main>
+</body>
+</html>
+<script src="helpDesk.js">
+
+</script>
+

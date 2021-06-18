@@ -11,10 +11,5 @@ team members
 
 font sources 1.google font font-family: 'Poppins',sans-serif!important;
 
-image sources https://www.engagebay.com/ Main background img = https://cdn5.engagebay.com/img/index-page-bg-img.png Sub background img = https://www.engagebay.com/images/index-bg.png
-
-Colur source https://www.engagebay.com/
-
-Icon source 8icon.com google.com
 
 landing page :- homePage.html

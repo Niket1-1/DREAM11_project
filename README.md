@@ -7,7 +7,7 @@ team members
 
 2) Shariq Ansari- Help desk page,staic pages inside helpdesk page and JS part(helpdesk) , js and css(helpdesk pages and static pages) 
 
-3)Ganesh patil - How to play page, Responsive Mobile view part, js and css(how to play page) 
+3) Ganesh patil - How to play page, Responsive Mobile view part, js and css(how to play page) 
 
 font sources 1.google font font-family: 'Poppins',sans-serif!important;
 

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@0,500;1,200;1,400&display=swap');
+
+body{
+    background-color: #efefef;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    width: 60vw;
+    height: 60vw;
+    margin: 5vw auto;
+    background-color: white ;
+    padding: 3%;
+}
+h1{
+    margin-bottom: 5%;
+}
+p{
+    font-size: 20px;
+    /* margin-bottom: 5%; */
+
+}
+p:nth-child(2n){
+    color: rgb(0, 0, 131);
+}
+p:hover{
+    color: brown;
+    cursor: default;
+}
+h1:hover{
+    font-weight:100px;
+    font-size: 33px;
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    width: 25%;
+    margin:100px auto;
+    border: 1px solid green;
+    background-color: lime;
+
+}
+.footer button{
+    width:100px ;
+    height: 50px;
+    margin-left: 30px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid green;
+    cursor: pointer;
+    color: green;
+}

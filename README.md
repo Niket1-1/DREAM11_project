@@ -13,3 +13,5 @@ font sources 1.google font font-family: 'Poppins',sans-serif!important;
 
 
 landing page :- homePage.html
+Players image source:-https://d13ir53smqqeyp.cloudfront.net/d11-static-pages/images/playpers_2021-new.webp
+Color-css color
